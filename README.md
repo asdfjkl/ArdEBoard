@@ -4,7 +4,7 @@ This repository contains source code for an ATmega32U4 to control an electronic 
 
 ![ArdEBoard](https://raw.githubusercontent.com/asdfjkl/ArdEBoard/main/board_final.jpg)
 
-Boards must be based on a ATmega32U4 in order to emulate a USB keyboard. Examples are 
+The controller board must be based on a ATmega32U4 in order to emulate a USB keyboard. Examples are 
 - the Arduino Micro, 
 - the Arduino Leonardo, 
 - the SparkFun Pro Micro 
