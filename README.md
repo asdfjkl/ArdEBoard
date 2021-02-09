@@ -14,7 +14,7 @@ When moving a piece, the resulting move is sent in UCI notation (e.g. "e2e4") as
 
 More details on how to build such a board can be found at my [blog](https://buildingjerry.wordpress.com/) or [here](https://sites.google.com/site/bergersprojects/home)
 
-Two videos of playing with the board against Jerry - Das Schachprogramm and ShredderChess are available [here](https://youtu.be/BVx8kUXQ85c) and [here](https://youtu.be/WxEr-5x00cQ).
+Two videos of playing with the board against the chess GUI [Jerry](https://github.com/asdfjkl/jerry) and ShredderChess are available [here](https://youtu.be/BVx8kUXQ85c) and [here](https://youtu.be/WxEr-5x00cQ).
 
 # Operation
 
