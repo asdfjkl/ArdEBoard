@@ -52,7 +52,8 @@ void setup()
   // put your setup code here, to run once:
 
   /*
-  Approach that was used in Berger's Solus chess. It requires that the diodes point correctly (cf. wiring diagram)
+  Approach that was used in Berger's Sish & Solus chess board. For reed-switches, it requires that the diodes point 
+  correctly (cf. wiring diagram). For tacticle switches, this does not matter.
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   - Connect the rows to 8 pins of the microcontroller, setting them as OUTPUT, and initializing them all to '1' (High).
   - Connect the columns to 8 pins of the microcontroller, setting them all as INPUT with pull-up resistor enabled.
@@ -87,10 +88,13 @@ void setup()
 #endif
 }
 
+int reset_timer = 0;
 
 void loop()
 {
   delay(100);
+
+  reset_timer += 100;
 
   for (int i = 0; i < 8; i++)
   {
@@ -123,6 +127,8 @@ void loop()
           char s[] = "a1\n";
           s[0] = 97 + j;
           s[1] = 49 + i;
+
+          reset_timer = 0;
           
           #ifdef USB_KEYBOARD
             for (int m = 0; m < 2; m++)
@@ -134,7 +140,18 @@ void loop()
             Serial.println("button press");    
             Serial.println(s);    
           #endif          
-        } // no else: if STATUS[i][j] is true, we already sent the command once previously        
+        } else {
+          // if STATUS[i][j] is true, we already sent the command once previously
+          // we reset this after some time (1 second), otherwise we can't press one field two
+          // times consecutively
+          if(reset_timer > 1000) {
+            for( int k=0;k<8;k++) {
+              for( int l=0;l<8;l++) {
+                STATUS[k][l] = false;
+              }
+            }
+          }
+        }
       }
     }
     digitalWrite(rank_i, HIGH);
