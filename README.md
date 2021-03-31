@@ -16,6 +16,8 @@ More details on how to build such a board can be found at my [blog](https://buil
 
 A video of playing with the board against Aart Bik's Chess for Android is available [here](https://youtu.be/BVx8kUXQ85c).
 
+The corresponding source code of the version with tactile switches is the latest commit in the repo.
+
 ## Operation
 
 Just plug in the board and trigger a move by pressing the switch on the source and the target field.
@@ -37,6 +39,8 @@ When moving a piece, the resulting move is sent in UCI notation (e.g. "e2e4") as
 More details on how to build such a board can be found at my [blog](https://buildingjerry.wordpress.com/) or [here](https://sites.google.com/site/bergersprojects/home)
 
 Two videos of playing with the board against the chess GUI [Jerry](https://github.com/asdfjkl/jerry) and ShredderChess are available [here](https://youtu.be/BVx8kUXQ85c) and [here](https://youtu.be/WxEr-5x00cQ).
+
+The corresponding source code for the version with reed switches is in commit 3b1d32dfd718304a2e914dcc728c0895affa4953.
 
 ## Operation
 
