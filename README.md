@@ -14,7 +14,7 @@ The controller board must be based on a ATmega32U4 in order to emulate a USB key
 
 More details on how to build such a board can be found at my [blog](https://buildingjerry.wordpress.com/) or [here](https://sites.google.com/site/bergersprojects/home)
 
-A video of playing with the board against Aart Bik's Chess for Android is available [here](https://youtu.be/BVx8kUXQ85c).
+A video of playing with the board against Aart Bik's Chess for Android is available [here](https://www.youtube.com/watch?v=8ytjSXnHNNY).
 
 The corresponding source code of the version with tactile switches is the latest commit in the repo.
 
