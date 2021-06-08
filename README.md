@@ -24,7 +24,7 @@ Just plug in the board and trigger a move by pressing the switch on the source a
 
 # ArdEBoard with reed switches
 
-Before I've created a board based on reed-switches and magnets glued under every chess piece. Building it is however more complex and expensive, and due to issues w
+Before I've created a board based on reed-switches and magnets glued under every chess piece. Building it is however more complex and expensive, and due to issues with man-machine interaction (e.g. how to recover if you accidently knock over some or all pieces) I abandoned that approach.
 
 ![ArdEBoard](https://raw.githubusercontent.com/asdfjkl/ArdEBoard/main/board_final.jpg)
 
